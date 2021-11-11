@@ -32,7 +32,7 @@ public class appiumOA {
 			while (!moviesFound && scrollCount < 10) {
 				try {
 					movies = driver.findElement(By.xpath("//*[@text='Movies >']"));
-				    moviesFound = movies.isDisplayed();
+					moviesFound = movies.isDisplayed();
 				} catch (Exception e) {
 					driver.findElement(MobileBy.AndroidUIAutomator(
 					         "new UiScrollable(new UiSelector().scrollable(true)).scrollForward()")
