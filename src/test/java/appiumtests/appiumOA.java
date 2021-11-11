@@ -71,7 +71,7 @@ public class appiumOA {
 		} finally {
 			// Close the Android Optik TV app driver
 			System.out.println("\nShutting down the Android Optik TV app driver now.");
-            driver.quit();
+			driver.quit();
 		}
 	}
 
