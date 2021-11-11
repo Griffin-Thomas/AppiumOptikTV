@@ -56,13 +56,11 @@ public class appiumOA {
 			} catch (Exception e) {
 				// Do nothing
 			}
-			if (detailAvailable) {
-				if (detail.getText().contains(RATING)) {
-					System.out.println("Test successfully passed!");
-				}
-				else {
-					System.out.println("Test failed.");
-				}
+			if (detailAvailable && detail.getText().contains(RATING)) {
+				System.out.println("Test successfully passed!");
+			}
+			else {
+				System.out.println("Test failed.");
 			}
 			
 		} catch (Exception e) {
